@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "806279052634",
+    "firebase_url": "https://car-accessories-a0d54.firebaseio.com",
+    "project_id": "car-accessories-a0d54",
+    "storage_bucket": "car-accessories-a0d54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806279052634:android:eb63f7f830cf86d3",
+        "android_client_info": {
+          "package_name": "com.example.shaban.caraccessories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806279052634-ft82lvg7cb8hjqra80tr35jc3io2lbj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shaban.caraccessories",
+            "certificate_hash": "f6cfce796c8335a7fcd6942015255a12c38c5e69"
+          }
+        },
+        {
+          "client_id": "806279052634-qent78u4iq167qf1j41kbnrj909peccg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1lcbjux9nsqFNuP0IhO78VqNGzM2OMPA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "806279052634-qent78u4iq167qf1j41kbnrj909peccg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

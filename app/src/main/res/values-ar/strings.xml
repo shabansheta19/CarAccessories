@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اكسسوارات سيارات</string>
+    <string name="action_settings">اعدادات</string>
+    <string name="email">البريد الالكترونى</string>
+    <string name="passowrd">الرقم السرى</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="show_pwd">اظهار الرقم السرى</string>
+    <string name="hide_pwd">اخفاء الرقم السرى</string>
+    <string name="forgot">هل نسيت الرقم السرى؟</string>
+    <string name="newUser">هل انت عضو جديد؟ لعمل حساب اضغط هنا</string>
+    <string name="fullName">الاسم بالكامل</string>
+    <string name="mobileNumber">رقم المحمول</string>
+    <string name="confirmPassword">تاكيد الرقم السرى</string>
+    <string name="signUp">التسجيل</string>
+    <string name="already_user">هل لديك حساب؟ لتسجيل الدخول اضغط هنا</string>
+    <string name="registered_emailid">من فضلك ادخل بريدك الالكترونى بالاسفل:</string>
+    <string name="submit">تاكيد</string>
+    <string name="back">رجوع</string>
+</resources>
