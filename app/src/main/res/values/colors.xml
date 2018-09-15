@@ -8,6 +8,10 @@
     <color name="button_selectorcolor">#9E9E9E</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#40dcff</color>
+    <color name="colorRouteLine">#FF4081</color>
+
+    <color name="priceColor">#0055FF</color>
+    <color name="buttonBackground">#eea800</color>
 
 </resources>

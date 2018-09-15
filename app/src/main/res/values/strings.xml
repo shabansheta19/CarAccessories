@@ -3,7 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="email">Email</string>
     <string name="passowrd">Password</string>
-    <string name="login">LOGIN</string>
+    <string name="login">LOG IN</string>
     <string name="show_pwd">Show Password</string>
     <string name="hide_pwd">Hide Password</string>
     <string name="forgot">Forgot password?</string>
@@ -16,4 +16,10 @@
     <string name="registered_emailid">Please enter your Registered Email Id below:</string>
     <string name="submit">SUBMIT</string>
     <string name="back">BACK</string>
+    <string name="title_activity_accessory_info">Accessory Information</string>
+
+    <string name="currency_type">LE</string>
+    <string name="title_activity_accessory">Accessory</string>
+    <string name="title_activity_berofile">BerofileActivity</string>
+
 </resources>

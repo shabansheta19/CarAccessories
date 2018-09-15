@@ -1,23 +1,18 @@
 package com.example.shaban.caraccessories.utils.firebase_utils;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.example.shaban.caraccessories.CategoriesActivity;
+import com.example.shaban.caraccessories.AccessoryInfoActivity;
 import com.example.shaban.caraccessories.MainActivity;
-import com.example.shaban.caraccessories.utils.CustomToast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-
-import io.rmiri.buttonloading.ButtonLoading;
 
 /**
  * Created by shaban on 9/10/2018.
@@ -48,15 +43,14 @@ public class Authentication {
         auth.addAuthStateListener(mAuthListener);
     }
 
-    public void signIn(String email, final String password, final Activity activity, final ButtonLoading loginButton) {
+    public void signIn(String email, final String password, final Activity activity) {
         //authenticate user
         auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(activity, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        loginButton.setProgress(false);
                         if (task.isSuccessful())
-                            activity.startActivity(new Intent(activity, CategoriesActivity.class));
+                            activity.startActivity(new Intent(activity, AccessoryInfoActivity.class));
                         else
                             Toast.makeText(activity,"Sign In Failed",Toast.LENGTH_LONG).show();
                     }
@@ -64,13 +58,12 @@ public class Authentication {
         stop();
     }
 
-    public void signUp(String name, String email, String phoneNumber, String password, final Activity activity, final ButtonLoading signUpButton) {
+    public void signUp(String name, String email, String phoneNumber, String password, final Activity activity) {
         //create user
         auth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(activity, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        signUpButton.setProgress(false);
                         if (task.isSuccessful())
                             new MainActivity().replaceLoginFragment();
                         else

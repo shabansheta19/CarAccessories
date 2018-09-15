@@ -11,9 +11,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 
 import com.example.shaban.caraccessories.fragments.LoginFragment;
 import com.example.shaban.caraccessories.utils.Utils;
@@ -23,8 +20,8 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
 
     private static FragmentManager fragmentManager;
-    private Button arabicBtn;
-    private Button englishBtn;
+    //private Button arabicBtn;
+    //private Button englishBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,19 +29,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         fragmentManager = getSupportFragmentManager();
 
-        if (isOnline()) {
+        //if (isOnline()) {
             // If saved instance state is null then replace login fragment
             if (savedInstanceState == null) {
-                fragmentManager.beginTransaction().replace(R.id.frameContainer, new LoginFragment(),
-                        Utils.Login_Fragment).commit();
+                //fragmentManager.beginTransaction().replace(R.id.frameContainer, new LoginFragment(),
+                  //      Utils.Login_Fragment).commit();
+                startActivity(new Intent(this,CategoryActivity.class));
             }
-        } else {
-            startActivity(new Intent(MainActivity.this,NoConnectionActivity.class));
-        }
+        //} else {
+            //startActivity(new Intent(MainActivity.this,NoConnectionActivity.class));
+        //}
 
-        arabicBtn = (Button)findViewById(R.id.arabic_activity);
+        /*arabicBtn = (Button)findViewById(R.id.arabic_activity);
         englishBtn = (Button)findViewById(R.id.english_activity);
-
         arabicBtn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 changeLanguage("en");
             }
-        });
+        });*/
 
     }
 

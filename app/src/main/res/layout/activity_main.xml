@@ -4,15 +4,13 @@
     android:layout_height="fill_parent"
     android:fillViewport="true"
     android:overScrollMode="never"
-    android:background="@color/background_color"
     android:scrollbars="none" >
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/background_color" >
+        android:layout_height="wrap_content" >
 
-        <RelativeLayout
+        <!--<RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -36,7 +34,7 @@
                 android:text="عربى"
                 android:textColor="@color/white" />
 
-        </RelativeLayout>
+        </RelativeLayout>-->
 
         <FrameLayout
             android:id="@+id/frameContainer"
